@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <main class="age-calc">
+        <div class="box">
+          <!-- Inputs -->
+          <div class="inputs">
+            <!-- Input For Day -->
+            <div class="day">
+              <label for="day">Day</label>
+              <input
+                type="text"
+                name="day"
+                id="day"
+                placeholder="DD"
+                minlength="1"
+                maxlength="2"
+                required
+              />
+              <div class="invalid-data data-day">Must be valid day</div>
+            </div>
+            <!-- Input For Day // -->
+            <!-- Input For Month -->
+            <div class="month">
+              <label for="month">Month </label>
+              <input
+                type="text"
+                name="month"
+                id="month"
+                placeholder="MM"
+                required
+                minlength="1"
+                maxlength="2"
+              />
+              <div class="invalid-data data-month">Must be valid month</div>
+            </div>
+            <!-- Input For Month //-->
+            <!-- Input For Year -->
+            <div class="year">
+              <label for="year">Year</label>
+              <input
+                type="text"
+                name="year"
+                id="year"
+                placeholder="YYYY"
+                required
+                minlength="4"
+                maxlength="4"
+              />
+              <div class="invalid-data data-year">Year must be in past</div>
+            </div>
+            <!-- Input For Year //-->
+          </div>
+          <!-- Inputs -->
+          <!-- Result -->
+          <div class="result">
+            <div class="submit-btn">
+              <button class="calc-age" type="submit">
+                <img src="assets/images/icon-arrow.svg" alt="icon-arrow" />
+              </button>
+            </div>
+            <h1 class="show-years"><span>--</span>years</h1>
+            <h1 class="show-months"><span>--</span>months</h1>
+            <h1 class="show-days"><span>--</span>days</h1>
+          </div>
+          <!-- Result -->
+        </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
